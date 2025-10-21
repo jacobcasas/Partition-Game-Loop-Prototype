@@ -1,7 +1,7 @@
 import startScreenContent from './pages/start_screen/start_screen.js';
 import instructionScreenContent from './pages/instructions/instruction.js';
+import tutorialScreenContent from './pages/tutorial/tutorial.js';
 
-//button calls
 const mainContent = document.getElementById('app');
 
 const renderStartScreen = () => {
@@ -12,8 +12,16 @@ const renderStartScreen = () => {
 }
 const renderMainContent = () => {
     mainContent.innerHTML = instructionScreenContent();
+
+    const to_tutorial_button = document.getElementById('to-tutorial-btn');
+    to_tutorial_button.addEventListener('click', renderTutorialScreen);
 }
 
+const renderTutorialScreen = () => {
+    tutorialScreenContent(1).then((html) => {
+        mainContent.innerHTML = html;
+    });
+}
 
 
 renderStartScreen();

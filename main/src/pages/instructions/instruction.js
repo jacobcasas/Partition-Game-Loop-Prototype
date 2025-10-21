@@ -13,6 +13,7 @@ const instructionScreenContent = () => {
             fit in with the core idea.
         </p>
         <p>Thank you for your help, now lets get started!</p>
+        <button id="to-tutorial-btn">Continue</button>
     `;
 
     return text;
