@@ -1,5 +1,5 @@
-import startScreenContent from './start_screen/start_screen.js';
-import instructionScreenContent from './instructions/instruction.js';
+import startScreenContent from './pages/start_screen/start_screen.js';
+import instructionScreenContent from './pages/instructions/instruction.js';
 
 //button calls
 const mainContent = document.getElementById('app');
